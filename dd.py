@@ -25,5 +25,5 @@ class GradientBoostingRegressorScratch:
         y_pred = np.full(X.shape[0], self.initial_prediction)
         for tree in self.trees:
             y_pred += self.learning_rate * tree.predict(X)
-            
         return y_pred
+
